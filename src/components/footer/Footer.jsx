@@ -1,7 +1,10 @@
 import React from 'react';
+import Footer1 from './Footer1';
 
 const Navbar = () => {
   return (
+    <>
+    <Footer1></Footer1>
     <footer className="bg-white border-t p-6 md:p-12">
       <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6">
         {/* Popular Categories Section */}
@@ -99,7 +102,7 @@ const Navbar = () => {
           <p>VAT ID: NL814217412B01</p>
           <p>Customer service: hemaklantenservice@hema.nl</p>
       </div>
-    </footer>
+    </footer></>
   );
 };
 
