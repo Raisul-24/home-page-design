@@ -82,7 +82,7 @@ const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full p-3 cursor-pointer z-10"
+      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full p-5 shadow-xl cursor-pointer z-10"
       onClick={onClick}
     >
      <FaArrowRight />
@@ -94,7 +94,7 @@ const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full p-4 cursor-pointer z-10"
+      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black rounded-full p-5 shadow-xl cursor-pointer z-10"
       onClick={onClick}
     >
       <FaArrowLeft />
