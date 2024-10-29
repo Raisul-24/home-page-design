@@ -40,7 +40,7 @@ const Footer1 = () => {
       </div>
 
       {/* Bottom Section: Social Media, Payments, and Newsletter */}
-      <div className="bg-white text-black py-12">
+      <div className="bg-white text-black md:py-12">
         <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div>
             <h3 className="font-bold text-lg mb-4">follow HEMA</h3>

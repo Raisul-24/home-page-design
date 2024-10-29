@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
     <Footer1></Footer1>
     <footer className="bg-white border-t p-6 md:p-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6">
         {/* Popular Categories Section */}
         <div>
           <h3 className="font-semibold mb-4">popular categories</h3>
@@ -74,23 +74,30 @@ const Navbar = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="mt-12 border-t pt-6 text-sm flex flex-col md:flex-row md:justify-between items-center">
-        <div className="flex items-center space-x-6">
-          <img src="/logo.svg" alt="HEMA Logo" className="" />
-          <p className="text-gray-600 pr-2 border-r-2 link-hover">privacy statement</p>
-          <p className="text-gray-600 pr-2 border-r-2 link-hover">disclaimer</p>
-          <p className="text-gray-600 pr-2 border-r-2 link-hover">security</p>
-          <p className="text-gray-600 pr-2 border-r-2 link-hover">copyright</p>
-          <p className="text-gray-600 pr-2 border-r-2 link-hover">general terms and conditions</p>
-          <p className="text-gray-600 pr-2 border-r-2 link-hover">cookies</p>
-          <div className="flex items-center pr-2 border-r-2">
-            <p className="text-gray-600 link-hover">nothing 18</p>
-            <img src="/public/nix-18.webp" className='w-12 h-4 ml-2' alt="" srcset="" />
-          </div>
-          <div className="flex items-center">
-            <p className="text-gray-600 link-hover">home shopping guarantee</p>
-            <img src="/public/secured-shopping.webp" className='w-4 h-4 ml-2' alt="" srcset="" />
-          </div>
+      <div className="mt-12 border-t pt-6 text-sm font-medium">
+        <div className="flex flex-col lg:flex-row-reverse  lg:justify-between items-center space-x-6 ">
+          
+        <div className="flex flex-wrap pb-3 lg:pb-0 border-b-2 lg:border-b-0 space-y-2 lg:space-y-0 lg:space-x-4">
+  <p className="text-gray-600 px-2 lg:pr-0 border-r-2 lg:border-r-0 link-hover">privacy statement</p>
+  <p className="text-gray-600 px-2 lg:pr-0 border-r-2 lg:border-r-0 link-hover">disclaimer</p>
+  <p className="text-gray-600 px-2 lg:pr-0 border-r-2 lg:border-r-0 link-hover">security</p>
+  <p className="text-gray-600 px-2 lg:pr-0 border-r-2 lg:border-r-0 link-hover">copyright</p>
+  <p className="text-gray-600 px-2 lg:pr-0 border-r-2 lg:border-r-0 link-hover">general terms and conditions</p>
+  <p className="text-gray-600 px-2 lg:pr-0 border-r-2 lg:border-r-0 link-hover">cookies</p>
+  
+  <div className="flex items-center px-2 lg:pr-0 border-r-2 lg:border-r-0">
+    <p className="text-gray-600 link-hover">nothing 18</p>
+    <img src="/public/nix-18.webp" className="w-12 h-4 ml-2" alt="Nix 18" />
+  </div>
+  
+  <div className="flex items-center px-2">
+    <p className="text-gray-600 link-hover">home shopping guarantee</p>
+    <img src="/public/secured-shopping.webp" className="w-4 h-4 ml-2" alt="Secured Shopping" />
+  </div>
+</div>
+
+
+          <img src="/logo.svg" alt="HEMA Logo" className="pt-8 lg:pt-0" />
         </div>
 
 
