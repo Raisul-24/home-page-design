@@ -59,7 +59,7 @@ const MoreHema = () => {
       <h2 className="text-2xl font-semibold mb-6">Even More HEMA</h2>
       <Slider {...settings} key={`${showNextArrow}-${showPrevArrow}`}>
         {items.map((item, index) => (
-          <div key={index} className="card shadow-xl mr-4">
+          <div key={index} className="card shadow-xl px-4">
             <figure className="py-16 bg-base-200">
               <img
                 src={item.img}
