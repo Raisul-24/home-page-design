@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const NiceExtra = () => {
@@ -85,8 +86,16 @@ const NiceExtra = () => {
 
    return (
       <div className="mx-auto my10">
-         <h2 className="text-2xl font-semibold">Spaar voor leuke extra's</h2>
+         <div className="flex justify-between items-center">
+            <div>
+            <h2 className="text-2xl font-semibold">Spaar voor leuke extra's</h2>
          <p className="my-2">Wissel je punten in voor gratis producten</p>
+            </div>
+            <div className='text-lg gap-1 flex items-center'>
+               <Link className='hover:underline'>view all</Link>
+               <FaArrowRight></FaArrowRight>
+            </div>
+         </div>
          <div className="relative">
             <Slider ref={sliderRef} {...settings}>
                {rewards.map((reward, index) => (
