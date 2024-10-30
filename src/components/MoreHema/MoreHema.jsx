@@ -22,7 +22,7 @@ const MoreHema = () => {
   const settings = {
     dots: false,
     infinite: false,
-    speed: 500,
+    speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
     afterChange: (index) => setCurrentSlide(index),
@@ -41,6 +41,8 @@ const MoreHema = () => {
     sliderRef.current.slickPrev();
   };
 
+  const isLastSlide = currentSlide >= items.length - settings.slidesToScroll;
+
   return (
     <div className="mx-auto py-10">
       <h2 className="text-2xl font-semibold mb-6">Even More HEMA</h2>
@@ -52,7 +54,7 @@ const MoreHema = () => {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="rounded-xl transition-transform transform hover:scale-150 h-60 w-52"
+                  className="rounded-xl transition-transform transform hover:scale-125 h-60 w-52"
                 />
               </figure>
               <div className="pt-6 px-2 text-left h-32 shadow">
@@ -65,17 +67,19 @@ const MoreHema = () => {
         {currentSlide > 0 && (
           <button
             onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-4 shadow-xl z-10"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-3 md:p-5 shadow-xl z-10 border-2"
           >
             <FaArrowLeft />
           </button>
         )}
-        <button
-          onClick={nextSlide}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-4 shadow-xl z-10"
-        >
-          <FaArrowRight />
-        </button>
+        {!isLastSlide && (
+          <button
+            onClick={nextSlide}
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-3 md:p-5 shadow-xl z-10 border-2"
+          >
+            <FaArrowRight />
+          </button>
+        )}
       </div>
     </div>
   );
