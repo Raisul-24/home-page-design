@@ -88,36 +88,36 @@ const NiceExtra = () => {
          <h2 className="text-2xl font-semibold">Spaar voor leuke extra's</h2>
          <p className="my-2">Wissel je punten in voor gratis producten</p>
          <div className="relative">
-         <Slider ref={sliderRef} {...settings}>
-  {rewards.map((reward, index) => (
-    <div key={index} className="bg-white rounded-lg p-5 mb-2 relative">
-      <div className="bg-orange-50 p-4 rounded-xl">
-        <div className="relative">
-          <img
-            src={reward.image}
-            alt={reward.title}
-            className="w-80 h-96 rounded-lg mb-2 hover:scale-105"
-          />
-          {/* Heart-shaped div for reward points */}
-          <div className="absolute top-2 left-4 w-10 h-10 flex justify-center items-center text-white font-bold">
-            <div className="relative w-10 h-10 bg-red-500 rounded-tl-[50%] rounded-tr-[50%] rounded-bl-[50%] rounded-br-none transform rotate-45">
-              <div className="absolute inset-0 flex justify-center items-center transform -rotate-45">
-                {reward.points}
-              </div>
-            </div>
-          </div>
-          <div className="absolute bottom-0 right-0 bg-red-500 text-white p-1 rounded-lg">
-            <p className="text-xs text-white">
-              HEMA <br />
-              pas
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="font-semibold px-2 mt-2">{reward.description}</div>
-    </div>
-  ))}
-</Slider>
+            <Slider ref={sliderRef} {...settings}>
+               {rewards.map((reward, index) => (
+                  <div key={index} className="bg-white rounded-lg p-5 mb-2 relative">
+                     <div className="bg-orange-50 p-4 rounded-xl">
+                        <div className="relative">
+                           <img
+                              src={reward.image}
+                              alt={reward.title}
+                              className="w-80 h-96 rounded-lg mb-2 hover:scale-105"
+                           />
+                           {/* Heart-shaped div for reward points */}
+                           <div className="absolute top-2 left-4 w-10 h-10 flex justify-center items-center text-white font-bold">
+                              <div className="relative w-10 h-10 bg-red-500 rounded-tl-[50%] rounded-tr-[50%] rounded-bl-[50%] rounded-br-none transform rotate-45">
+                                 <div className="absolute inset-0 flex justify-center items-center transform -rotate-45">
+                                    {reward.points}
+                                 </div>
+                              </div>
+                           </div>
+                           <div className="absolute bottom-0 right-0 bg-red-500 text-white p-1 rounded-lg">
+                              <p className="text-xs text-white">
+                                 HEMA <br />
+                                 pas
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="font-semibold px-2 mt-2">{reward.description}</div>
+                  </div>
+               ))}
+            </Slider>
 
             {currentSlide > 0 && (
                <button
