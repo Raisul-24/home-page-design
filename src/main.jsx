@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import HomePage from "./pages/home/homepage";
 import MainLayout from "./Layout/MainLayout";
+import HomePage from "./pages/home/HomePage";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element: <HomePage></HomePage>
+        element: <HomePage></HomePage>,
       }
     ]
   },
