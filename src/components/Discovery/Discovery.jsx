@@ -77,7 +77,6 @@ const Discovery = () => {
                         alt={card.title}
                         className="w-96 h-96 object-cover rounded-t-xl"
                      />
-
                      <div className={`px-5 py-3 w-96 flex-1 rounded-b-xl ${card.bgColor}`}>
                         <h3 className="text-xl font-semibold text-white">
                            {card.title}
