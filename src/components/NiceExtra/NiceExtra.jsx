@@ -84,7 +84,7 @@ const NiceExtra = () => {
    const isLastSlide = currentSlide >= rewards.length - settings.slidesToScroll;
 
    return (
-      <div className="mx-auto">
+      <div className="mx-auto my10">
          <h2 className="text-2xl font-semibold">Spaar voor leuke extra's</h2>
          <p className="my-2">Wissel je punten in voor gratis producten</p>
          <div className="relative">

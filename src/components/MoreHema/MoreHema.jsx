@@ -44,7 +44,7 @@ const MoreHema = () => {
   const isLastSlide = currentSlide >= items.length - settings.slidesToScroll;
 
   return (
-    <div className="mx-auto py-10">
+    <div className="mx-auto my-10">
       <h2 className="text-2xl font-semibold mb-6">Even More HEMA</h2>
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
