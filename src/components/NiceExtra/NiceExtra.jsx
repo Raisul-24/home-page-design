@@ -85,7 +85,7 @@ const NiceExtra = () => {
    const isLastSlide = currentSlide >= rewards.length - settings.slidesToScroll;
 
    return (
-      <div className="mx-auto my10">
+      <div className="mx-auto my-10">
          <div className="flex justify-between items-center">
             <div>
             <h2 className="text-2xl font-semibold">Spaar voor leuke extra's</h2>

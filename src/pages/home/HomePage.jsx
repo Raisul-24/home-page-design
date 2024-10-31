@@ -4,12 +4,16 @@ import MoreHema from '../../components/MoreHema/MoreHema';
 import NiceExtra from '../../components/NiceExtra/NiceExtra';
 import Banner1 from '../../components/Banner1/Banner1';
 import Discovery from '../../components/Discovery/Discovery';
+import PhotoService from '../../components/PhotoService/PhotoService';
 
 const homepage = () => {
    return (
       <div>
          <Banner1></Banner1>
          <h2> this is homepage</h2>
+         <PhotoService></PhotoService>
+
+         
          <Discovery></Discovery>
          <NiceExtra></NiceExtra>
          <MoreHema></MoreHema>
