@@ -72,7 +72,7 @@ const PhotoService = () => {
                            <div className="absolute top-4 left-4 bg-red-500 text-white p-2">
                               <p className="text-xl font-extrabold text-white">
                                  30 % <br />
-                                 Korting
+                                 <span className='text-sm'>Korting</span>
                               </p>
                            </div>
                         </div>
