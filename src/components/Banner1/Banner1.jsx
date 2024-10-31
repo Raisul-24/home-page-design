@@ -50,7 +50,7 @@ const Banner1 = () => {
 
    const isLastSlide = currentSlide >= categories.length - settings.slidesToScroll;
    return (
-      <div className="mx-auto mt-3">
+      <div className="mx-auto mt-8">
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           {categories.map((item, index) => (

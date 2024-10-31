@@ -86,7 +86,7 @@ const NiceExtra = () => {
 
    return (
       <div className="mx-auto my-10">
-         <div className="flex justify-between items-center">
+         <div className="flex flex-col md:flex-row justify-between items-center">
             <div>
             <h2 className="text-2xl font-semibold">Spaar voor leuke extra's</h2>
          <p className="my-2">Wissel je punten in voor gratis producten</p>

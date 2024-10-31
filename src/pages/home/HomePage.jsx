@@ -6,12 +6,13 @@ import Banner1 from '../../components/Banner1/Banner1';
 import Discovery from '../../components/Discovery/Discovery';
 import PhotoService from '../../components/PhotoService/PhotoService';
 import MidSeasonSale from '../../components/MidSeasonSale/MidSeasonSale';
+import HemaCrazy from '../../components/HemaCrazy/HemaCrazy';
 
 const homepage = () => {
    return (
       <div>
          <Banner1></Banner1>
-         <h2> this is homepage</h2>
+         <HemaCrazy></HemaCrazy>
          <PhotoService></PhotoService>
 
          <MidSeasonSale></MidSeasonSale>

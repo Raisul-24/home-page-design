@@ -101,9 +101,9 @@ const MidSeasonSale = () => {
    const isLastSlide = currentSlide >= products.length - settings.slidesToScroll;
 
   return (
-    <div className="max-w-7xl mx-auto p-6 mb-32">
+    <div className="mx-auto p-6 mb-32">
       <div className="absolute  bg-red-600 text-white px-6 h-60 w-full rounded-lg">
-        <div className="flex justify-between items-center pt-10">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-10">
         <h2 className="text-3xl font-bold">Mid Season Sale</h2>
         <div className="flex items-center">
         <Link to='/' className="text-sm font-medium hover:underline mr-1">View all sales</Link>

@@ -49,7 +49,7 @@ const PhotoService = () => {
 
    return (
       <div className="mx-auto my-10">
-         <div className="flex justify-between items-center my-4">
+         <div className="flex flex-col md:flex-row justify-between items-center my-4">
             <div>
             <h2 className="text-2xl font-bold">offers at HEMA photo service</h2>
             </div>

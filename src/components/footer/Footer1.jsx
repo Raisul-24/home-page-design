@@ -5,8 +5,7 @@ import { FaFacebookSquare, FaInstagram, FaPinterest, FaTiktok, FaYoutube, FaSnap
 const Footer1 = () => {
   return (
     <footer className=" bg-violet-700 text-white">
-      {/* Top Section: Help, Customer Service, and Store Locator */}
-      <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8 py-14">
+      <div className="mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8 py-14">
         <div>
           <h3 className="font-bold text-xl mb-4">need help?</h3>
           <ul className="space-y-2">
@@ -39,9 +38,8 @@ const Footer1 = () => {
         </div>
       </div>
 
-      {/* Bottom Section: Social Media, Payments, and Newsletter */}
       <div className="bg-white text-black md:py-12">
-        <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
           <div>
             <h3 className="font-bold text-lg mb-4">follow HEMA</h3>
             <div className="flex space-x-4">
