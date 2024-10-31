@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-
 const NiceExtra = () => {
    const sliderRef = useRef(null);
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -118,7 +117,7 @@ const NiceExtra = () => {
                            <div className="absolute bottom-0 right-0 bg-red-500 text-white p-1 rounded-lg">
                               <p className="text-xs text-white">
                                  HEMA <br />
-                                 pas
+                                 pas 
                               </p>
                            </div>
                         </div>

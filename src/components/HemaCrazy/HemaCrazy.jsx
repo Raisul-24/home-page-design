@@ -100,13 +100,13 @@ const HemaCrazy = () => {
    return (
       <div className="mx-auto p-6 mb-72 mt-10">
          <div className="absolute  bg-gray-100 text-black px-6 min-h-96 w-full rounded-lg">
-            <div className="flex flex-col md:flex-row justify-between items-center pt-5 mx-auto">
+            <div className="flex flex-col md:flex-row justify-around items-center pt-5 mx-auto">
                <div>
                   <h2 className='text-4xl lg:text-6xl font-extrabold'>HEMA is going <br />crazy</h2>
                   <p className='my-4'>HEMA is going crazy</p>
                   <button className="btn btn-outline md:w-64 lg:w-96">shop now</button>
                </div>
-               <img src="/public/crazy/crazy.png" className='hidden md:flex md:h-48 lg:h-64 w-60' alt="" srcset="" />
+               <img src="/public/crazy/crazy.png" className='hidden md:flex md:h-48 lg:w-96 lg:h-64 md:w-60' alt="" srcset="" />
             </div>
          </div>
 
