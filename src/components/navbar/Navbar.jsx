@@ -15,12 +15,10 @@ const Navbar = () => {
 
    return (
       <div>
-         {/* Navbar */}
          <div className="navbar bg-base-100 items-center">
             <div className="navbar-start">
                <img src="/logo.svg" className="mr-4" alt="logo" />
                <div className="relative">
-                  {/* Drawer Toggle */}
                   <button
                      className="flex items-center btn btn-ghost drawer-button"
                      onMouseEnter={() => toggleDrawer(true)}
@@ -36,12 +34,10 @@ const Navbar = () => {
                </div>
             </div>
 
-            {/* Navbar Center */}
             <div className=" hidden md:flex navbar-center">
                <a className="btn btn-ghost text-xl">daisyUI</a>
             </div>
 
-            {/* Navbar End */}
             <div className="navbar-end">
                <Link className="btn btn-ghost btn-square md:min-w-20">
                   <div className="flex items-center">
@@ -58,19 +54,16 @@ const Navbar = () => {
             </div>
          </div>
 
-         {/* Drawer Content */}
          {isDrawerOpen && (
             <div
                className="fixed inset-0 z-50 bg-white animate-slide-down"
                onMouseLeave={() => toggleDrawer(false)}
             >
-               {/* Overlay */}
                <div 
                   className="fixed inset-0 bg-black bg-opacity-30" 
                   onClick={() => toggleDrawer(false)}
                ></div>
 
-               {/* Drawer Main Content */}
                <div className="relative p-6">
                   <div className="navbar bg-base-100 items-center">
                      <div className="navbar-start">
