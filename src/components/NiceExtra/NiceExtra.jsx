@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-
 const NiceExtra = () => {
    const sliderRef = useRef(null);
    const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,49 +12,49 @@ const NiceExtra = () => {
       {
          points: 150,
          title: "Gratis limited edition tompouce geurkaars",
-         image: "/public/niceExtra/1.webp",
+         image: "/niceExtra/1.webp",
          description: "Limited edition scented candle",
       },
       {
          points: 150,
          title: "5 Euro korting bij Jumbo winkel",
-         image: "/public/niceExtra/2.webp",
+         image: "/niceExtra/2.webp",
          description: "5 Euro discount on purchases over 25 Euros",
       },
       {
          points: 100,
          title: "2.50 korting",
-         image: "/public/niceExtra/3.webp",
+         image: "/niceExtra/3.webp",
          description: "2.50 Euro discount on purchases over 15 Euros",
       },
       {
          points: 75,
          title: "10% korting",
-         image: "/public/niceExtra/4.webp",
+         image: "/niceExtra/4.webp",
          description: "10% discount on one product",
       },
       {
          points: 50,
          title: "Gratis pak wattenschijfjes",
-         image: "/public/niceExtra/5.jpg",
+         image: "/niceExtra/5.jpg",
          description: "Free pack of cotton pads",
       },
       {
          points: 250,
          title: "5 Euro korting",
-         image: "/public/niceExtra/6.webp",
+         image: "/niceExtra/6.webp",
          description: "5 Euro discount",
       },
       {
          points: 300,
          title: "10 Euro korting bij Jumbo winkel",
-         image: "/public/niceExtra/7.webp",
+         image: "/niceExtra/7.webp",
          description: "10 Euro discount on purchases over 50 Euros",
       },
       {
          points: 100,
          title: "Gratis grote herbruikbare shopper",
-         image: "/public/niceExtra/8.jpg",
+         image: "/niceExtra/8.jpg",
          description: "Free reusable shopper bag",
       },
    ];
@@ -66,6 +65,7 @@ const NiceExtra = () => {
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
+      arrows: false,
       afterChange: (index) => setCurrentSlide(index),
       responsive: [
          { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
@@ -85,11 +85,11 @@ const NiceExtra = () => {
    const isLastSlide = currentSlide >= rewards.length - settings.slidesToScroll;
 
    return (
-      <div className="mx-auto my-10">
-         <div className="flex justify-between items-center">
-            <div>
-            <h2 className="text-2xl font-semibold">Spaar voor leuke extra's</h2>
-         <p className="my-2">Wissel je punten in voor gratis producten</p>
+      <div className="mx-auto mt-10">
+         <div className="flex flex-col md:flex-row justify-between items-center text-black">
+            <div className='pl-2'>
+               <h2 className="text-2xl font-semibold">Save your nice extra's</h2>
+               <p className="my-2">exchange your points for free products</p>
             </div>
             <div className='text-lg gap-1 flex items-center'>
                <Link className='hover:underline'>view all</Link>

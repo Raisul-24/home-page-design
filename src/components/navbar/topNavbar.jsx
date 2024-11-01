@@ -5,7 +5,7 @@ const TopNavbar = () => {
    return (
       <div className='hidden md:font-medium md:py-2 md:flex md:justify-between'>
          <div className="">
-            <NavLink className='mr-2 link-hover' to='/'>photo service</NavLink>
+            <NavLink className='mx-2 link-hover' to='/'>photo service</NavLink>
             <NavLink className='mr-2 link-hover' to='/'>tickets & deals</NavLink>
             <NavLink className='mr-2 link-hover' to='/'>insurances</NavLink>
             <NavLink className='mr-2 link-hover' to='/'>inspiration</NavLink>

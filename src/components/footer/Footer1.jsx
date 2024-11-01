@@ -5,8 +5,7 @@ import { FaFacebookSquare, FaInstagram, FaPinterest, FaTiktok, FaYoutube, FaSnap
 const Footer1 = () => {
   return (
     <footer className=" bg-violet-700 text-white">
-      {/* Top Section: Help, Customer Service, and Store Locator */}
-      <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8 py-14">
+      <div className="mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8 py-14">
         <div>
           <h3 className="font-bold text-xl mb-4">need help?</h3>
           <ul className="space-y-2">
@@ -30,7 +29,7 @@ const Footer1 = () => {
             <input
               type='text'
               placeholder="enter zip code or city"
-              className="p-3 rounded-l-md border-none outline-none w-full text-black"
+              className="p-3 rounded-l-md border-none outline-none w-full text-black bg-white"
             />
             <button className="p-3 bg-white text-purple-500 rounded-r-md">
               🔍
@@ -39,10 +38,9 @@ const Footer1 = () => {
         </div>
       </div>
 
-      {/* Bottom Section: Social Media, Payments, and Newsletter */}
-      <div className="bg-white text-black md:py-12">
-        <div className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <div>
+      <div className="bg-white text-black py-5">
+        <div className="mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          <div className='border-b-2 lg:border-0'>
             <h3 className="font-bold text-lg mb-4">follow HEMA</h3>
             <div className="flex space-x-4">
               <FaFacebookSquare className="w-6 h-6 text-blue-400" />
@@ -55,7 +53,7 @@ const Footer1 = () => {
               <FaYoutube className="w-6 h-6 text-red-500" />
             </div>
           </div>
-          <div>
+          <div className='border-b-2 lg:border-0'>
             <h3 className="font-bold text-lg mb-4">easy payment*</h3>
             <div className="flex space-x-4">
               <FaIdeal className="w-10 h-10 text-orange-600" />
@@ -77,7 +75,7 @@ const Footer1 = () => {
               <input
                 type="email"
                 placeholder="email address*"
-                className="p-2 rounded-md border w-full outline-none mr-2"
+                className="p-2 rounded-md border w-full outline-none mr-2 bg-white"
               />
               <button className="p-2 bg-teal-600 text-white rounded-md min-w-28">
                 to register

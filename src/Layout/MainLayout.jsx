@@ -41,7 +41,7 @@ const MainLayout = () => {
       )}
 
 <button
-        className="fixed bottom-1/4 right-0 px-3 py-1 text-black shadow-xl border-2 rounded-lg z-50 -rotate-90"
+        className="fixed bottom-1/4 right-0 px-3 py-1 bg-white text-black shadow-xl border-2 rounded-lg z-50 -rotate-90"
         onClick={() => alert('Feedback button clicked!')}
       >
         <p className="text-sm">Feedback</p>

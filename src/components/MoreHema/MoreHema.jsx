@@ -9,9 +9,9 @@ const MoreHema = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const items = [
+    { img: "/metaHema/3.jpeg", title: "SnowWorld tickets", description: "Now with 40% discount!" },
     { img: "/metaHema/1.jpg", title: "HEMA brochure", description: "Enjoy browsing through our offers." },
     { img: "/metaHema/2.webp", title: "Photo service", description: "Photo books, prints, and photo gifts." },
-    { img: "/metaHema/3.jpeg", title: "SnowWorld tickets", description: "Now with 40% discount!" },
     { img: "/metaHema/4.jpg", title: "HEMA friends prices", description: "Best deals from friends of HEMA." },
     { img: "/metaHema/5.png", title: "Insurance", description: "The quality of Menzis with HEMA benefits." },
     { img: "/metaHema/6.jpg", title: "Good idea", description: "Contribute to a better world." },
@@ -25,6 +25,7 @@ const MoreHema = () => {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
+    arrows: false,
     afterChange: (index) => setCurrentSlide(index),
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
@@ -44,20 +45,20 @@ const MoreHema = () => {
   const isLastSlide = currentSlide >= items.length - settings.slidesToScroll;
 
   return (
-    <div className="mx-auto my-10">
-      <h2 className="text-2xl font-semibold mb-6">Even More HEMA</h2>
+    <div className="mx-auto md:mt-5">
+      <h2 className="text-2xl font-semibold  pl-2 text-black">Even More HEMA</h2>
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           {items.map((item, index) => (
             <div key={index} className="card px-4">
-              <figure className="py-16 bg-base-200 ">
+              <figure className="mt-5 p-4 bg-gray-100 rounded-xl">
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="rounded-xl transition-transform transform hover:scale-125 h-60 w-52"
+                  className="rounded-xl transition-transform transform hover:scale-125 h-60 w-full"
                 />
               </figure>
-              <div className="pt-6 px-2 text-left h-32 shadow">
+              <div className="pt-6 px-2 text-left h-32">
                 <h2 className="font-semibold">{item.title}</h2>
                 <p>{item.description}</p>
               </div>
