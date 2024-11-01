@@ -5,6 +5,8 @@ import { FaCartFlatbedSuitcase } from "react-icons/fa6";
 import { GrUserManager } from "react-icons/gr";
 import { Link } from 'react-router-dom';
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { FaSearch } from "react-icons/fa";
+import DrawerNavbar from './DrawerNavbar';
 
 const Navbar = () => {
    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -34,8 +36,18 @@ const Navbar = () => {
                </div>
             </div>
 
-            <div className=" hidden md:flex navbar-center">
-               <a className="btn btn-ghost text-xl">daisyUI</a>
+            {/* Search bar */}
+            <div className="hidden md:flex navbar-center">
+               <div className="relative max-w-lg mx-auto">
+                  <input
+                     type="text"
+                     placeholder="What are you looking for?"
+                     className="w-full h-12 pl-5 pr-12 text-gray-700 bg-gray-200 rounded-full focus:outline-none"
+                  />
+                  <button className="absolute top-1/2 right-4 transform -translate-y-1/2">
+                     <FaSearch className="text-gray-500 text-xl" />
+                  </button>
+               </div>
             </div>
 
             <div className="navbar-end">
@@ -54,55 +66,9 @@ const Navbar = () => {
             </div>
          </div>
 
+         {/* DrawerNavbar Component */}
          {isDrawerOpen && (
-            <div
-               className="fixed inset-0 z-50 bg-white animate-slide-down"
-               onMouseLeave={() => toggleDrawer(false)}
-            >
-               <div 
-                  className="fixed inset-0 bg-black bg-opacity-30" 
-                  onClick={() => toggleDrawer(false)}
-               ></div>
-
-               <div className="relative p-6">
-                  <div className="navbar bg-base-100 items-center">
-                     <div className="navbar-start">
-                        <img src="/logo.svg" className="mr-4" alt="logo" />
-                        <p className="hidden md:flex text-xl">Categories</p>
-                        {isDrawerOpen ? (
-                        <IoIosArrowUp className="ml-1 hidden md:flex" />
-                     ) : (
-                        <IoIosArrowDown className="ml-1 hidden md:flex" />
-                     )}
-                     </div>
-
-                     <div className="navbar-center hidden md:flex">
-                        <a className="btn btn-ghost text-xl">daisyUI</a>
-                     </div>
-
-                     <div className="navbar-end">
-                        <Link className="btn btn-ghost btn-square md:min-w-20">
-                           <div className="flex items-center">
-                              <GrUserManager className="text-2xl mr-2" />
-                              <p className="hidden md:flex">Log In</p>
-                           </div>
-                        </Link>
-                        <Link className="btn btn-ghost btn-square">
-                           <GiSelfLove className="text-2xl font-medium" />
-                        </Link>
-                        <Link className="btn btn-ghost btn-square">
-                           <FaCartFlatbedSuitcase className="text-2xl" />
-                        </Link>
-                     </div>
-                  </div>
-
-                  {/* Additional Drawer Items */}
-                  <ul className="menu bg-white p-6 border-t-2">
-                     <li><a>Sidebar Item 1</a></li>
-                     <li><a>Sidebar Item 2</a></li>
-                  </ul>
-               </div>
-            </div>
+            <DrawerNavbar isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
          )}
       </div>
    );

@@ -8,22 +8,22 @@ const Banner1 = () => {
    const sliderRef = useRef(null);
    const [currentSlide, setCurrentSlide] = useState(0);
    const categories = [
-      { id: 1, title: 'sinterklaas', image: '/public/banner1/1.webp' },
+      { id: 1, title: 'Sunta claus', image: '/public/banner1/1.webp' },
       { id: 2, title: 'baby', image: '/public/banner1/2.webp' },
       { id: 3, title: 'kind', image: '/public/banner1/3.webp' },
       { id: 4, title: 'dames', image: '/public/banner1/4.webp' },
-      { id: 5, title: 'heren', image: '/public/banner1/5.webp' },
-      { id: 6, title: 'wonen en slapen', image: '/public/banner1/6.webp' },
-      { id: 7, title: 'taart, eten en drinken', image: '/public/banner1/7.webp' },
-      { id: 8, title: 'vrije tijd en kantoor', image: '/public/banner1/17.webp' },
-      { id: 9, title: 'koken en tafelen', image: '/public/banner1/9.webp' },
+      { id: 5, title: 'Gantlemen', image: '/public/banner1/5.webp' },
+      { id: 6, title: 'living and sleeping', image: '/public/banner1/6.webp' },
+      { id: 7, title: 'cake, food and drinks', image: '/public/banner1/7.webp' },
+      { id: 8, title: 'new', image: '/public/banner1/17.webp' },
+      { id: 9, title: 'leisure and oofice', image: '/public/banner1/9.webp' },
       { id: 10, title: 'feest en cadeau', image: '/public/banner1/17.webp' },
-      { id: 11, title: 'feest en cadeau', image: '/public/banner1/11.webp' },
-      { id: 12, title: 'feest en cadeau', image: '/public/banner1/12.webp' },
-      { id: 13, title: 'feest en cadeau', image: '/public/banner1/13.webp' },
-      { id: 14, title: 'feest en cadeau', image: '/public/banner1/14.webp' },
-      { id: 15, title: 'feest en cadeau', image: '/public/banner1/15.webp' },
-      { id: 16, title: 'feest en cadeau', image: '/public/banner1/16.webp' },
+      { id: 11, title: 'cooking and dining', image: '/public/banner1/11.webp' },
+      { id: 12, title: 'party and gift', image: '/public/banner1/12.webp' },
+      { id: 13, title: 'toys', image: '/public/banner1/13.webp' },
+      { id: 14, title: 'beautiful and healthy', image: '/public/banner1/14.webp' },
+      { id: 15, title: 'photo and service', image: '/public/banner1/15.webp' },
+      { id: 16, title: 'Offers and sales', image: '/public/banner1/16.webp' },
     ];
 
    const settings = {
@@ -50,7 +50,7 @@ const Banner1 = () => {
 
    const isLastSlide = currentSlide >= categories.length - settings.slidesToScroll;
    return (
-      <div className="mx-auto mt-8">
+      <div className="mx-auto my-8">
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           {categories.map((item, index) => (
@@ -62,7 +62,7 @@ const Banner1 = () => {
                   className="rounded-full transition-transform transform hover:scale-125"
                 />
               </figure>
-              <div className="pt-6 text-center">
+              <div className="pt-6 text-center px-3">
                 <h2 className="font-semibold">{item.title}</h2>
               </div>
             </div>
