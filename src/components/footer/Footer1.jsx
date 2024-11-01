@@ -29,7 +29,7 @@ const Footer1 = () => {
             <input
               type='text'
               placeholder="enter zip code or city"
-              className="p-3 rounded-l-md border-none outline-none w-full text-black"
+              className="p-3 rounded-l-md border-none outline-none w-full text-black bg-white"
             />
             <button className="p-3 bg-white text-purple-500 rounded-r-md">
               🔍
@@ -75,7 +75,7 @@ const Footer1 = () => {
               <input
                 type="email"
                 placeholder="email address*"
-                className="p-2 rounded-md border w-full outline-none mr-2"
+                className="p-2 rounded-md border w-full outline-none mr-2 bg-white"
               />
               <button className="p-2 bg-teal-600 text-white rounded-md min-w-28">
                 to register
