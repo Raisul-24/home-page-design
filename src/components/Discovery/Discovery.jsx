@@ -10,7 +10,7 @@ const Discovery = () => {
    const cardData = [
       {
          id: 1,
-         image: '/public/discovery/1.png',
+         image: '/discovery/1.png',
          title: 'takkie & siepie',
          description:
             'laat de magie van de feestdagen tot leven komen met onze iconische vrienden Takkie en Siepie!',
@@ -18,7 +18,7 @@ const Discovery = () => {
       },
       {
          id: 2,
-         image: '/public/discovery/2.png',
+         image: '/discovery/2.png',
          title: 'sinterklaas',
          description:
             'ontdek ons assortiment en vind de leukste sinterklaasspullen',
@@ -26,14 +26,14 @@ const Discovery = () => {
       },
       {
          id: 3,
-         image: '/public/discovery/3.png',
+         image: '/discovery/3.png',
          title: 'de voorpret begint',
          description: 'ontdek onze nieuwste kerstartikelen',
          bgColor: 'bg-yellow-700',
       },
       {
          id: 4,
-         image: '/public/discovery/4.png',
+         image: '/discovery/4.png',
          title: 'chocolate letters at HEMA',
          description: 'very honest',
          bgColor: 'bg-green-600',

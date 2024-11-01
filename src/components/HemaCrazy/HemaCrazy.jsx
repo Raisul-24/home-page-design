@@ -6,67 +6,67 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 const promos = [
    {
       discount: "35% korting",
-      img: "/public/crazy/1.jpg",
+      img: "/crazy/1.jpg",
       title: "(led)candles",
       subtitle: "weekend promotion until sunday",
    },
    {
       discount: "40% korting",
-      img: "/public/crazy/2.jpg",
+      img: "/crazy/2.jpg",
       title: "Malmö, Napoli and Lyon pans",
       subtitle: "weekend promotion until sunday",
    },
    {
       discount: "30% korting",
-      img: "/public/crazy/3.jpg",
+      img: "/crazy/3.jpg",
       title: "bath textiles",
       subtitle: "in 14 colours",
    },
    {
       discount: "1+1 gratis",
-      img: "/public/crazy/4.jpg",
+      img: "/crazy/4.jpg",
       title: "thermal underwear",
       subtitle: "all combinations are possible",
    },
    {
       discount: "1+1 gratis",
-      img: "/public/crazy/5.jpg",
+      img: "/crazy/5.jpg",
       title: "ladies basic t-shirts",
       subtitle: "all combinations are possible",
     },
     {
       discount: "3 voor 24,99",
-      img: "/public/crazy/6.jpg",
+      img: "/crazy/6.jpg",
       title: "coffee beans 1 kg",
       subtitle: "all combinations are possible",
     },
     {
       discount: "3 voor 9,99",
-      img: "/public/crazy/7.jpg",
+      img: "/crazy/7.jpg",
       title: "ladies shirt",
       subtitle: "all combinations are possible",
     },
     {
       discount: "30% korting",
-      img: "/public/crazy/8.jpg",
+      img: "/crazy/8.jpg",
       title: "women's turtlenecks",
       subtitle: "various colours, S to XL",
     },
     {
       discount: "30% korting",
-      img: "/public/crazy/9.jpg",
+      img: "/crazy/9.jpg",
       title: "men's knitted fashion",
       subtitle: "various types, M to XXL",
     },
     {
       discount: "30% korting",
-      img: "/public/crazy/10.jpg",
+      img: "/crazy/10.jpg",
       title: "electrical household appliances HEMA",
       subtitle: "various types",
     },
     {
       discount: "3 voor 8.99",
-      img: "/public/crazy/11.jpg",
+      img: "/crazy/11.jpg",
       title: "temp tech tights 40 and 60 denier",
       subtitle: "all combinations are possible",
     },
@@ -106,7 +106,7 @@ const HemaCrazy = () => {
                   <p className='my-4'>HEMA is going crazy</p>
                   <button className="btn btn-outline md:w-64 lg:w-96">shop now</button>
                </div>
-               <img src="/public/crazy/crazy.png" className='hidden md:flex md:h-48 lg:w-96 lg:h-64 md:w-60' alt="" srcset="" />
+               <img src="/crazy/crazy.png" className='hidden md:flex md:h-48 lg:w-96 lg:h-64 md:w-60' alt="" srcset="" />
             </div>
          </div>
 

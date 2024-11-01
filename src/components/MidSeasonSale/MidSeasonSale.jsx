@@ -10,7 +10,7 @@ import { FaRegHeart } from "react-icons/fa";
 const products = [
   {
     id: 1,
-    image: '/public/sale/1.jpg',
+    image: '/sale/1.jpg',
     title: "Women's trousers Eren beige",
     originalPrice: 30.0,
     discountPrice: 21.0,
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 2,
-    image: '/public/sale/2.jpg',
+    image: '/sale/2.jpg',
     title: 'Ladies lounge pants velvet black',
     originalPrice: 17.99,
     discountPrice: 11.99,
@@ -28,7 +28,7 @@ const products = [
   },
   {
     id: 3,
-    image: '/public/sale/3.jpg',
+    image: '/sale/3.jpg',
     title: 'Washi tapes hearts - 3 pieces',
     originalPrice: 2.99,
     discountPrice: 2.5,
@@ -37,7 +37,7 @@ const products = [
   },
   {
     id: 4,
-    image: '/public/sale/4.jpg',
+    image: '/sale/4.jpg',
     title: 'Folding crate letter board recycled XS bright pink',
     originalPrice: 3.59,
     discountPrice: 2.0,
@@ -46,7 +46,7 @@ const products = [
   },
   {
    id: 5,
-   image: '/public/sale/5.jpg',
+   image: '/sale/5.jpg',
    title: 'Newborn jumpsuit elephants',
    originalPrice: 10.0,
    discountPrice: 5.0,
@@ -55,7 +55,7 @@ const products = [
  },
  {
    id: 6,
-   image: '/public/sale/6.jpg',
+   image: '/sale/6.jpg',
    title: 'LED ribbed candle with wax Ø7.5x10 dark pink',
    originalPrice: 5.99,
    discountPrice: 4.0,
@@ -64,7 +64,7 @@ const products = [
  },
  {
    id: 7,
-   image: '/public/sale/8.jpg',
+   image: '/sale/8.jpg',
    title: 'Ladies wrap dress Raiza with linen',
    originalPrice: 40.0,
    discountPrice: 20.0,

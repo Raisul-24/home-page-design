@@ -87,12 +87,12 @@ const Navbar = () => {
   
   <div className="flex items-center px-2 lg:pr-0 border-r-2 lg:border-r-0">
     <p className="text-gray-600 link-hover">nothing 18</p>
-    <img src="/public/nix-18.webp" className="w-12 h-4 ml-2" alt="Nix 18" />
+    <img src="/nix-18.webp" className="w-12 h-4 ml-2" alt="Nix 18" />
   </div>
   
   <div className="flex items-center px-2">
     <p className="text-gray-600 link-hover">home shopping guarantee</p>
-    <img src="/public/secured-shopping.webp" className="w-4 h-4 ml-2" alt="Secured Shopping" />
+    <img src="/secured-shopping.webp" className="w-4 h-4 ml-2" alt="Secured Shopping" />
   </div>
 </div>
 

@@ -10,16 +10,16 @@ const PhotoService = () => {
    const [currentSlide, setCurrentSlide] = useState(0);
    const offers = [
       {
-        title: 'Wall Decoration', image: '/public/photoService/1.webp',
+        title: 'Wall Decoration', image: '/photoService/1.webp',
       },
       {
-        title: 'Photo Gifts', image: '/public/photoService/2.png',
+        title: 'Photo Gifts', image: '/photoService/2.png',
       },
       {
-        title: 'Photo Books', image: '/public/photoService/3.webp',
+        title: 'Photo Books', image: '/photoService/3.webp',
       },
       {
-        title: 'Print Photos', image: '/public/photoService/4.webp',
+        title: 'Print Photos', image: '/photoService/4.webp',
       },
     ];
 
