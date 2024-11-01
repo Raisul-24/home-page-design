@@ -20,7 +20,7 @@ const Navbar = () => {
          <div className="navbar bg-base-100 items-center">
             <div className="navbar-start">
                <img src="/logo.svg" className="mr-4" alt="logo" />
-               <div className="relative">
+               <div className="relative hidden lg:flex">
                   <button
                      className="flex items-center btn btn-ghost drawer-button"
                      onMouseEnter={() => toggleDrawer(true)}
@@ -42,7 +42,7 @@ const Navbar = () => {
                   <input
                      type="text"
                      placeholder="What are you looking for?"
-                     className="w-full h-12 pl-5 pr-12 text-gray-700 bg-gray-200 rounded-full focus:outline-none"
+                     className="w-full h-12 pl-5 pr-12 text-gray-700 bg-gray-100 rounded-full focus:outline-none"
                   />
                   <button className="absolute top-1/2 right-4 transform -translate-y-1/2">
                      <FaSearch className="text-gray-500 text-xl" />
@@ -63,9 +63,29 @@ const Navbar = () => {
                <Link className="btn btn-ghost btn-square">
                   <FaCartFlatbedSuitcase className="text-2xl" />
                </Link>
+               <div className="relative flex lg:hidden">
+                  <button
+                     className="flex items-center btn btn-ghost drawer-button"
+                     onMouseEnter={() => toggleDrawer(true)}
+                  >
+                     <MdMenu className="mr-2 text-2xl" />
+                  </button>
+               </div>
             </div>
          </div>
 
+         <div className="flex md:hidden">
+               <div className="relative max-w-lg mx-auto">
+                  <input
+                     type="text"
+                     placeholder="What are you looking for?"
+                     className="w-full h-12 pl-5 pr-12 text-gray-700 bg-gray-100 rounded-full focus:outline-none"
+                  />
+                  <button className="absolute top-1/2 right-4 transform -translate-y-1/2">
+                     <FaSearch className="text-gray-500 text-xl" />
+                  </button>
+               </div>
+            </div>
          {/* DrawerNavbar Component */}
          {isDrawerOpen && (
             <DrawerNavbar isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
