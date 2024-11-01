@@ -5,6 +5,7 @@ import { GrUserManager } from "react-icons/gr";
 import { GiSelfLove } from "react-icons/gi";
 import { FaCartFlatbedSuitcase } from "react-icons/fa6";
 import { Link, NavLink } from 'react-router-dom';
+import { FaTimes } from "react-icons/fa"; // Import the close icon
 
 const categories = [
    { id: 1, title: 'Sunta claus', image: '/banner1/1.webp' },
@@ -23,7 +24,7 @@ const categories = [
    { id: 14, title: 'beautiful and healthy', image: '/banner1/14.webp' },
    { id: 15, title: 'photo and service', image: '/banner1/15.webp' },
    { id: 16, title: 'Offers and sales', image: '/banner1/16.webp' },
- ];
+];
 
 const DrawerNavbar = ({ isDrawerOpen, toggleDrawer }) => {
    return (
@@ -34,7 +35,14 @@ const DrawerNavbar = ({ isDrawerOpen, toggleDrawer }) => {
             onClick={() => toggleDrawer(false)}
          ></div>
 
-         <div className="relative p-6">
+         <div className="relative p-2 md:p-6">
+            <button 
+               className="absolute top-4 md:top-6 right-4 md:right-7 text-gray-500 text-2xl"
+               onClick={() => toggleDrawer(false)}
+            >
+               <FaTimes />
+            </button>
+
             <div className="navbar bg-base-100 items-center">
                <div className="navbar-start">
                   <img src="/logo.svg" className="mr-4" alt="logo" />
@@ -77,16 +85,16 @@ const DrawerNavbar = ({ isDrawerOpen, toggleDrawer }) => {
             </div>
 
             {/* Additional Drawer Items */}
-            
             <ul className="menu bg-white p-6 border-t-2">
-            <h2 className='font-bold pb-3 border-b-2'>categories</h2>
+               <h2 className='font-bold pb-3 border-b-2'>categories</h2>
                {
-               categories.map((category) =>(
-                  <div key={category.id} className="flex items-center space-x-2 border p-2 w-64 hover:bg-slate-100 border-r-2">
-                     <img src={category.image} alt="{category.title}" className='w-10 h-10 rounded-full' />
-                     <NavLink>{category.title}</NavLink>
-                  </div>
-               ))}
+                  categories.map((category) => (
+                     <div key={category.id} className="flex items-center space-x-2 border p-2 w-64 hover:bg-slate-100 border-r-2">
+                        <img src={category.image} alt={category.title} className='w-10 h-10 rounded-full' />
+                        <NavLink>{category.title}</NavLink>
+                     </div>
+                  ))
+               }
             </ul>
          </div>
       </div>

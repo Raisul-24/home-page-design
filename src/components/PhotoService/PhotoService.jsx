@@ -10,9 +10,9 @@ const PhotoService = () => {
    const [currentSlide, setCurrentSlide] = useState(0);
 
    const offers = [
-      { title: 'Wall Decoration', image: '/photoService/1.webp' },
+      { title: 'Wall Decoration', image: '/photoService/1.png' },
       { title: 'Photo Gifts', image: '/photoService/2.png' },
-      { title: 'Photo Books', image: '/photoService/3.webp' },
+      { title: 'Photo Books', image: '/photoService/3.png' },
       { title: 'Print Photos', image: '/photoService/4.webp' },
       { title: 'HEMA Photo Service Overview', image: '', isOverview: true },
    ];

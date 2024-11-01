@@ -17,7 +17,7 @@ const Navbar = () => {
 
    return (
       <div>
-         <div className="navbar bg-base-100 items-center">
+         <div className="navbar bg-base-100 items-center fixed top-0 left-0 w-full z-50">
             <div className="navbar-start">
                <img src="/logo.svg" className="mr-4" alt="logo" />
                <div className="relative hidden lg:flex">
@@ -74,22 +74,25 @@ const Navbar = () => {
             </div>
          </div>
 
-         <div className="flex md:hidden">
-               <div className="relative max-w-lg mx-auto">
-                  <input
-                     type="text"
-                     placeholder="What are you looking for?"
-                     className="w-full h-12 pl-5 pr-12 text-gray-700 bg-gray-100 rounded-full focus:outline-none"
-                  />
-                  <button className="absolute top-1/2 right-4 transform -translate-y-1/2">
-                     <FaSearch className="text-gray-500 text-xl" />
-                  </button>
-               </div>
+         {/* Mobile search bar */}
+         <div className="flex md:hidden mt-[4rem] px-4 pt-7">
+            <div className="relative max-w-lg mx-auto w-full">
+               <input
+                  type="text"
+                  placeholder="What are you looking for?"
+                  className="w-full h-12 pl-5 pr-12 text-gray-700 bg-gray-100 rounded-full focus:outline-none"
+               />
+               <button className="absolute top-1/2 right-4 transform -translate-y-1/2">
+                  <FaSearch className="text-gray-500 text-xl" />
+               </button>
             </div>
+         </div>
+
          {/* DrawerNavbar Component */}
          {isDrawerOpen && (
             <DrawerNavbar isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
          )}
+<div className="pt-0 md:pt-8"></div>
       </div>
    );
 };
