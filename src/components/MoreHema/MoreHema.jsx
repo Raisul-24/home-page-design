@@ -9,9 +9,9 @@ const MoreHema = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const items = [
+    { img: "/metaHema/3.jpeg", title: "SnowWorld tickets", description: "Now with 40% discount!" },
     { img: "/metaHema/1.jpg", title: "HEMA brochure", description: "Enjoy browsing through our offers." },
     { img: "/metaHema/2.webp", title: "Photo service", description: "Photo books, prints, and photo gifts." },
-    { img: "/metaHema/3.jpeg", title: "SnowWorld tickets", description: "Now with 40% discount!" },
     { img: "/metaHema/4.jpg", title: "HEMA friends prices", description: "Best deals from friends of HEMA." },
     { img: "/metaHema/5.png", title: "Insurance", description: "The quality of Menzis with HEMA benefits." },
     { img: "/metaHema/6.jpg", title: "Good idea", description: "Contribute to a better world." },
@@ -55,7 +55,7 @@ const MoreHema = () => {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="rounded-xl transition-transform transform hover:scale-125 h-60 w-52"
+                  className="rounded-xl transition-transform transform hover:scale-125 h-60 w-full"
                 />
               </figure>
               <div className="pt-6 px-2 text-left h-32">

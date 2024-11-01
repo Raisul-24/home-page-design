@@ -106,7 +106,7 @@ const HemaCrazy = () => {
                   <p className='my-1 md:my-4'>HEMA draait door</p>
                   <button className="border-2 border-black rounded-lg py-1 md:py-2 font-semibold hover:bg-black hover:text-white w-64 md:w-72 lg:w-96">shop now</button>
                </div>
-               <img src="/crazy/crazy.png" className=' md:w-72 lg:w-96 md:h-48 lg:h-64' alt="" srcset="" />
+               <img src="/crazy/crazy.png" className=' md:w-72 lg:w-96 h-36 md:h-48 lg:h-64' alt="" srcset="" />
             </div>
          </div>
 

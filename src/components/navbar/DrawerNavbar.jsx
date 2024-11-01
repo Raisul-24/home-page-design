@@ -43,7 +43,7 @@ const DrawerNavbar = ({ isDrawerOpen, toggleDrawer }) => {
                <FaTimes />
             </button>
 
-            <div className="navbar bg-base-100 items-center">
+            <div className="navbar bg-white items-center">
                <div className="navbar-start">
                   <img src="/logo.svg" className="mr-4" alt="logo" />
                   <p className="hidden md:flex text-xl">Categories</p>
@@ -68,7 +68,7 @@ const DrawerNavbar = ({ isDrawerOpen, toggleDrawer }) => {
                   </div>
                </div>
 
-               <div className="navbar-end">
+               <div className="navbar-end text-black">
                   <Link className="btn btn-ghost btn-square md:min-w-20">
                      <div className="flex items-center">
                         <GrUserManager className="text-2xl mr-2" />
