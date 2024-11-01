@@ -90,7 +90,7 @@ const categories = [
 const DiscoverEverything = () => {
   return (
     <div className="p-8 bg-white text-black">
-      <h2 className="text-2xl md:text-3xl font-bold mb-6">Discover Everything</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-3">Discover Everything</h2>
       
       {/* Accordion for Small Devices */}
       <div className="md:hidden">

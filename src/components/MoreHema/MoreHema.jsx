@@ -45,20 +45,20 @@ const MoreHema = () => {
   const isLastSlide = currentSlide >= items.length - settings.slidesToScroll;
 
   return (
-    <div className="mx-auto mt-10">
-      <h2 className="text-2xl font-semibold mb-6 pl-2 text-black">Even More HEMA</h2>
+    <div className="mx-auto md:mt-5">
+      <h2 className="text-2xl font-semibold  pl-2 text-black">Even More HEMA</h2>
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           {items.map((item, index) => (
             <div key={index} className="card px-4">
-              <figure className="py-16 bg-base-200 ">
+              <figure className="mt-5 p-4 bg-gray-100 rounded-xl">
                 <img
                   src={item.img}
                   alt={item.title}
                   className="rounded-xl transition-transform transform hover:scale-125 h-60 w-52"
                 />
               </figure>
-              <div className="pt-6 px-2 text-left h-32 shadow">
+              <div className="pt-6 px-2 text-left h-32">
                 <h2 className="font-semibold">{item.title}</h2>
                 <p>{item.description}</p>
               </div>

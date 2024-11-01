@@ -34,8 +34,8 @@ const Discovery = () => {
       {
          id: 4,
          image: '/discovery/4.png',
-         title: 'chocolate letters at HEMA',
-         description: 'very honest',
+         title: 'chocolate letters',
+         description: 'very honest at HEMA',
          bgColor: 'bg-green-600',
       },
    ];
@@ -82,7 +82,7 @@ const Discovery = () => {
                         <h3 className="text-xl font-semibold text-white">
                            {card.title}
                         </h3>
-                        <p className="text-white text-sm mt-2 h-24">
+                        <p className="text-white text-sm my-2 h-20">
                            {card.description}
                         </p>
 

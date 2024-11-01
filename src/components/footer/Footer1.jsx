@@ -38,9 +38,9 @@ const Footer1 = () => {
         </div>
       </div>
 
-      <div className="bg-white text-black md:py-12">
-        <div className="mx-auto p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
-          <div>
+      <div className="bg-white text-black py-5">
+        <div className="mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          <div className='border-b-2 lg:border-0'>
             <h3 className="font-bold text-lg mb-4">follow HEMA</h3>
             <div className="flex space-x-4">
               <FaFacebookSquare className="w-6 h-6 text-blue-400" />
@@ -53,7 +53,7 @@ const Footer1 = () => {
               <FaYoutube className="w-6 h-6 text-red-500" />
             </div>
           </div>
-          <div>
+          <div className='border-b-2 lg:border-0'>
             <h3 className="font-bold text-lg mb-4">easy payment*</h3>
             <div className="flex space-x-4">
               <FaIdeal className="w-10 h-10 text-orange-600" />
