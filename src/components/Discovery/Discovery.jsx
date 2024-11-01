@@ -65,23 +65,23 @@ const Discovery = () => {
    const isLastSlide = currentSlide >= cardData.length - settings.slidesToScroll;
    return (
       <div className="mx-auto my-10">
-         <h2 className="font-bold text-3xl my-5">get ready for the holidays</h2>
+         <h2 className="font-bold text-3xl my-5 pl-2">get ready for the holidays</h2>
          <div className="relative">
             <Slider ref={sliderRef} {...settings}>
                {cardData.map((card) => (
                   <div
                      key={card.id}
-                     className="overflow-hidden flex flex-col px-5 group">
+                     className="overflow-hidden flex flex-col group w-96 px-4">
                      <img
                         src={card.image}
                         alt={card.title}
-                        className="w-96 h-96 object-cover rounded-t-xl"
+                        className=" h-96 object-cover rounded-t-xl"
                      />
-                     <div className={`px-5 py-3 w-96 flex-1 rounded-b-xl ${card.bgColor}`}>
+                     <div className={`px-5 mr-10 py-3 w-full flex-1 rounded-b-xl ${card.bgColor}`}>
                         <h3 className="text-xl font-semibold text-white">
                            {card.title}
                         </h3>
-                        <p className="text-white text-sm mt-2 h-14">
+                        <p className="text-white text-sm mt-2 h-24">
                            {card.description}
                         </p>
 

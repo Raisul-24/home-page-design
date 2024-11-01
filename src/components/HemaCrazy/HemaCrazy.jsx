@@ -98,7 +98,7 @@ const HemaCrazy = () => {
    const isLastSlide = currentSlide >= promos.length - settings.slidesToScroll;
 
    return (
-      <div className="mx-auto p-6 mb-72 mt-10">
+      <div className="mx-auto p-0 md:p-6 mb-72 mt-10">
          <div className="absolute  bg-gray-100 text-black px-6 min-h-96 w-full rounded-lg">
             <div className="flex flex-col md:flex-row justify-around items-center pt-5 mx-auto">
                <div>

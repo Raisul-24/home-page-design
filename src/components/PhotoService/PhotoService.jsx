@@ -45,7 +45,7 @@ const PhotoService = () => {
       <div className="mx-auto my-10">
          <div className="flex flex-col md:flex-row justify-between items-center my-4">
             <div>
-               <h2 className="text-2xl font-bold">Offers at HEMA Photo Service</h2>
+               <h2 className="text-2xl font-bold pl-2">Offers at HEMA Photo Service</h2>
             </div>
             <div className='text-lg gap-1 flex items-center'>
                <Link to="/overview" className='hover:underline'>View All</Link>

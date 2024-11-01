@@ -26,7 +26,7 @@ const Navbar = () => {
                      onMouseEnter={() => toggleDrawer(true)}
                   >
                      <MdMenu className="mr-2 text-2xl" />
-                     <p className="hidden md:flex">Categories</p>
+                     <p className="hidden lg:flex">Categories</p>
                      {isDrawerOpen ? (
                         <IoIosArrowUp className="ml-1 hidden md:flex" />
                      ) : (

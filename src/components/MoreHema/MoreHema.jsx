@@ -45,7 +45,7 @@ const MoreHema = () => {
 
   return (
     <div className="mx-auto my-10">
-      <h2 className="text-2xl font-semibold mb-6">Even More HEMA</h2>
+      <h2 className="text-2xl font-semibold mb-6 pl-2">Even More HEMA</h2>
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           {items.map((item, index) => (
