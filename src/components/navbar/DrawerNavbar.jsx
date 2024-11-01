@@ -79,10 +79,10 @@ const DrawerNavbar = ({ isDrawerOpen, toggleDrawer }) => {
             {/* Additional Drawer Items */}
             
             <ul className="menu bg-white p-6 border-t-2">
-            <h2 className='font-bold pb-2 border-b-4'>categories</h2>
+            <h2 className='font-bold pb-3 border-b-2'>categories</h2>
                {
                categories.map((category) =>(
-                  <div key={category.id} className="flex items-center space-x-2 border p-2 w-64 hover:bg-slate-100 border-r-4">
+                  <div key={category.id} className="flex items-center space-x-2 border p-2 w-64 hover:bg-slate-100 border-r-2">
                      <img src={category.image} alt="{category.title}" className='w-10 h-10 rounded-full' />
                      <NavLink>{category.title}</NavLink>
                   </div>
