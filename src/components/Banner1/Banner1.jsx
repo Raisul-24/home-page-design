@@ -16,7 +16,7 @@ const Banner1 = () => {
       { id: 6, title: 'living and sleeping', image: '/banner1/6.webp' },
       { id: 7, title: 'cake, food and drinks', image: '/banner1/7.webp' },
       { id: 8, title: 'new', image: '/banner1/17.webp' },
-      { id: 9, title: 'leisure and oofice', image: '/banner1/9.webp' },
+      { id: 9, title: 'leisure and office', image: '/banner1/9.webp' },
       { id: 10, title: 'feest en cadeau', image: '/banner1/17.webp' },
       { id: 11, title: 'cooking and dining', image: '/banner1/11.webp' },
       { id: 12, title: 'party and gift', image: '/banner1/12.webp' },
@@ -24,7 +24,7 @@ const Banner1 = () => {
       { id: 14, title: 'beautiful and healthy', image: '/banner1/14.webp' },
       { id: 15, title: 'photo and service', image: '/banner1/15.webp' },
       { id: 16, title: 'Offers and sales', image: '/banner1/16.webp' },
-    ];
+   ];
 
    const settings = {
       dots: false,
@@ -32,12 +32,13 @@ const Banner1 = () => {
       speed: 300,
       slidesToShow: 8,
       slidesToScroll: 8,
+      arrows: false,
       afterChange: (index) => setCurrentSlide(index),
       responsive: [
-         { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
-         { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2 } },
-         { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-      ],
+         { breakpoint: 1024, settings: { slidesToShow: 6, slidesToScroll: 6 } }, 
+         { breakpoint: 600, settings: { slidesToShow: 3, slidesToScroll: 3 } }, 
+         { breakpoint: 480, settings: { slidesToShow: 3, slidesToScroll: 3 } },
+        ],
    };
 
    const nextSlide = () => {
@@ -49,43 +50,44 @@ const Banner1 = () => {
    };
 
    const isLastSlide = currentSlide >= categories.length - settings.slidesToScroll;
+
    return (
       <div className="mx-auto my-8">
-      <div className="relative">
-        <Slider ref={sliderRef} {...settings}>
-          {categories.map((item, index) => (
-            <div key={index} className="card p-2">
-              <figure className="rounded-full">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="rounded-full transition-transform transform hover:scale-125"
-                />
-              </figure>
-              <div className="pt-6 text-center px-3">
-                <h2 className="font-semibold">{item.title}</h2>
-              </div>
-            </div>
-          ))}
-        </Slider>
-        {currentSlide > 0 && (
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-3 md:p-5 shadow-xl z-10 border-2"
-          >
-            <FaArrowLeft />
-          </button>
-        )}
-        {!isLastSlide && (
-          <button
-            onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-3 md:p-5 shadow-xl z-10 border-2"
-          >
-            <FaArrowRight />
-          </button>
-        )}
+         <div className="relative">
+            <Slider ref={sliderRef} {...settings}>
+               {categories.map((item, index) => (
+                  <div key={index} className="card p-2">
+                     <figure className="rounded-full">
+                        <img
+                           src={item.image}
+                           alt={item.title}
+                           className="rounded-full transition-transform transform hover:scale-125"
+                        />
+                     </figure>
+                     <div className="pt-2 h-8 text-center px-3">
+                        <h2 className="text-xs font-medium md:font-semibold">{item.title}</h2>
+                     </div>
+                  </div>
+               ))}
+            </Slider>
+            {currentSlide > 0 && (
+               <button
+                  onClick={prevSlide}
+                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-3 md:p-5 shadow-xl z-10 border-2"
+               >
+                  <FaArrowLeft />
+               </button>
+            )}
+            {!isLastSlide && (
+               <button
+                  onClick={nextSlide}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black text-xl rounded-full p-3 md:p-5 shadow-xl z-10 border-2"
+               >
+                  <FaArrowRight />
+               </button>
+            )}
+         </div>
       </div>
-    </div>
    );
 };
 

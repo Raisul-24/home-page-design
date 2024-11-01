@@ -89,8 +89,8 @@ const categories = [
 
 const DiscoverEverything = () => {
   return (
-    <div className="p-8 bg-white">
-      <h2 className="text-2xl md:text-3xl font-bold mb-6">discover everything</h2>
+    <div className="p-8 bg-white text-black">
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 ">discover everything</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {categories.map((category, index) => (
           <div key={index} className="space-y-2">

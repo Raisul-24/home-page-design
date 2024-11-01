@@ -82,6 +82,7 @@ const MidSeasonSale = () => {
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
+      arrows: false,
       afterChange: (index) => setCurrentSlide(index),
       responsive: [
          { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
@@ -101,7 +102,7 @@ const MidSeasonSale = () => {
    const isLastSlide = currentSlide >= products.length - settings.slidesToScroll;
 
   return (
-    <div className="mx-auto p-0 md:p-6 mb-32">
+    <div className="mx-auto mb-32">
       <div className="absolute  bg-red-600 text-white px-6 h-60 w-full rounded-lg">
         <div className="flex flex-col md:flex-row justify-between items-center pt-10">
         <h2 className="text-3xl font-bold">Mid Season Sale</h2>

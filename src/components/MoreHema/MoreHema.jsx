@@ -25,6 +25,7 @@ const MoreHema = () => {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
+    arrows: false,
     afterChange: (index) => setCurrentSlide(index),
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
@@ -44,8 +45,8 @@ const MoreHema = () => {
   const isLastSlide = currentSlide >= items.length - settings.slidesToScroll;
 
   return (
-    <div className="mx-auto my-10">
-      <h2 className="text-2xl font-semibold mb-6 pl-2">Even More HEMA</h2>
+    <div className="mx-auto mt-10">
+      <h2 className="text-2xl font-semibold mb-6 pl-2 text-black">Even More HEMA</h2>
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           {items.map((item, index) => (

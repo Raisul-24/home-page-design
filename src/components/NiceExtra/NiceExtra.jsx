@@ -65,6 +65,7 @@ const NiceExtra = () => {
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
+      arrows: false,
       afterChange: (index) => setCurrentSlide(index),
       responsive: [
          { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
@@ -85,10 +86,10 @@ const NiceExtra = () => {
 
    return (
       <div className="mx-auto my-10">
-         <div className="flex flex-col md:flex-row justify-between items-center">
+         <div className="flex flex-col md:flex-row justify-between items-center text-black">
             <div className='pl-2'>
-            <h2 className="text-2xl font-semibold">Save your nice extra's</h2>
-         <p className="my-2">exchange your points for free products</p>
+               <h2 className="text-2xl font-semibold">Save your nice extra's</h2>
+               <p className="my-2">exchange your points for free products</p>
             </div>
             <div className='text-lg gap-1 flex items-center'>
                <Link className='hover:underline'>view all</Link>
@@ -117,7 +118,7 @@ const NiceExtra = () => {
                            <div className="absolute bottom-0 right-0 bg-red-500 text-white p-1 rounded-lg">
                               <p className="text-xs text-white">
                                  HEMA <br />
-                                 pas 
+                                 pas
                               </p>
                            </div>
                         </div>

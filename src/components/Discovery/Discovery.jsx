@@ -46,6 +46,7 @@ const Discovery = () => {
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 3,
+      arrows: false,
       afterChange: (index) => setCurrentSlide(index),
       responsive: [
          { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
@@ -65,7 +66,7 @@ const Discovery = () => {
    const isLastSlide = currentSlide >= cardData.length - settings.slidesToScroll;
    return (
       <div className="mx-auto my-10">
-         <h2 className="font-bold text-3xl my-5 pl-2">get ready for the holidays</h2>
+         <h2 className="font-bold text-black text-2xl md:text-3xl my-5 pl-2">get ready for the holidays</h2>
          <div className="relative">
             <Slider ref={sliderRef} {...settings}>
                {cardData.map((card) => (
