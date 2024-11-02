@@ -9,7 +9,7 @@ Check out the live version of the project here:
    ```
 
 
-# Run the Project Process
+# Run the Project Process:
 
 ## Step-by-Step Guidelines
 
