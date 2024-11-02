@@ -5,7 +5,7 @@ This project showcases a modern home page built using React, focusing on respons
 # Live Demo
 Check out the live version of the project here:
    ```
-   will be announced soon...
+  https://hemain.netlify.app
    ```
 
 
