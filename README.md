@@ -19,11 +19,11 @@ Check out the live version of the project here:
    ```
 2. **Run the command:** Open your termonal and run this command:
    ```
-   npm i
+   npm install
    ```
    If you encounter any issues, try using the force flag:
    ```
-   npm i -f
+   npm install -f
    ```
 3. **Run the project:** Start the development server with the following command:
     ```
