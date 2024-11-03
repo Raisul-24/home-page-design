@@ -23,7 +23,7 @@ Check out the live version of the project here:
    ```
    If you encounter any issues, try using the force flag:
    ```
-   npm install -f
+   npm install -force
    ```
 3. **Run the project:** Start the development server with the following command:
     ```
